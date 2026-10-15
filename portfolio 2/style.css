@@ -27,3 +27,14 @@ button{
     background-color: darkslategray;
     color: aliceblue;
 }
+.delete-btn {
+    margin-left: 10px;  
+    padding: 4px 10px;
+    font-size: 0.85rem;  
+    background-color: #13c2ee;
+    color: white;
+    border: none;   
+}
+body.dark-theme .delete-btn {
+    background-color: #2a97f0; 
+}
