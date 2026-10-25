@@ -3,14 +3,13 @@
    1. GLOBAL RESET
 ========================================= */
 
-*
+*,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 /* =========================================
    2. DESIGN SYSTEM
@@ -74,7 +73,6 @@ body {
 
     min-height: 100vh;
 }
-
 
 /* =========================================
    4. TYPOGRAPHY
@@ -550,12 +548,24 @@ ol {
 }
 
 #home .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
     margin-bottom: 20px;
     color: #38BDF8;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.6;
+}
+
+#home .status-dot {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 8px;
+    border-radius: 50%;
+    background: #34D399;
+    box-shadow: 0 0 12px rgba(52, 211, 153, 0.55);
 }
 
 #home .hero-title {
@@ -2028,6 +2038,10 @@ ol {
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 12px;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
 }
 
 .services-section > .container:first-child h2 {
@@ -2061,7 +2075,7 @@ ol {
 }
 
 /* Service titles */
-.services-section > .container:not(:first-child) > p:first-child {
+.services-section > .container:not(:first-child) > h3 {
     margin-bottom: 18px;
     color: var(--color-accent, #38BDF8);
     font-size: 1.35rem;
@@ -2246,11 +2260,12 @@ ol {
 }
 
 /* Existing social icons */
-.network-section li a i {
+.network-icon {
     display: block;
     margin-bottom: 12px;
     color: var(--color-accent, #38BDF8);
     font-size: 2rem;
+    font-weight: 800;
 }
 
 /* Hover and keyboard accessibility */
@@ -2355,7 +2370,7 @@ ol {
     transition: color var(--transition, 0.3s ease);
 }
 
-#contacts li a i {
+#contacts li a span {
     margin-left: 5px;
 }
 
