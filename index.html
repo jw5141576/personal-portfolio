@@ -19,20 +19,18 @@
                 >
             </a>
 
-            <input
-                type="checkbox"
-                id="nav-toggle"
-                class="nav-toggle"
-                aria-label="Toggle navigation menu"
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
             >
+                ☰
+            </button>
 
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <nav class="site-nav" aria-label="Main navigation">
+            <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
@@ -71,7 +69,7 @@
                 </h2>
 
                 <p class="hero-text">
-                    I'm a software engineering professional passionate about
+                    I'm a software engineer who's passionate about
                     building responsive, reliable, and impactful digital
                     solutions. My journey has taught me to approach challenges
                     with creativity, resilience, and a commitment to continuous
@@ -300,8 +298,8 @@
                     Creating responsive, accessible, and user-friendly interfaces.
                 </p>
                 <div class="skill-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
                     <span>JavaScript</span>
                  </div>
             </article>
@@ -388,81 +386,77 @@
 
             <div class="education-timeline">
 
-                <div class="education-item">
+                <article class="education-item">
                     <div class="education-marker" aria-hidden="true"></div>
 
                     <div class="education-card">
                         <div class="education-card-top">
                             <span class="education-category">UNIVERSITY</span>
-                            <span class="education-date">2023</span>
                         </div>
 
-                        <h3>African Leadership University (ALU)</h3>
+                        <h3>University Of The People</h3>
 
                         <p class="education-description">
-                            Awarded a scholarship that provided an important
-                            opportunity for academic growth and personal
-                            development. This experience strengthened my
-                            resilience, resourcefulness, and commitment
-                            to learning.
+                            My studies in Business Administration and Management provide the
+                            foundational framework for my strategic approach to technology
+                            development. This academic background has equipped me with the
+                            cross-functional leadership tools necessary to bridge the gap between
+                            technical software architecture and large-scale technological business
+                            models.
                         </p>
 
                         <div class="education-tags">
-                            <span>Scholarship</span>
-                            <span>Personal Development</span>
-                            <span>Resilience</span>
+                            <span>Business Administration</span>
+                            <span>Management</span>
+                            <span>Leadership</span>
                         </div>
                     </div>
-                </div>
-            <article class="education-item">
-                <div class="education-marker" aria-hidden="true"></div>
+                </article>
+                <article class="education-item">
+                    <div class="education-marker" aria-hidden="true"></div>
 
-                <div class="education-card">
-                    <div class="education-card-top">
-                        <span class="education-category">COLLEGE</span>
-                        <span class="education-date">Programme details to confirm</span>
+                    <div class="education-card">
+                        <div class="education-card-top">
+                            <span class="education-category">COLLEGE</span>
+                        </div>
+
+                        <h3>Media Crest College</h3>
+
+                        <p class="education-description">
+                            My education in Software Engineering provided me with the core
+                            theoretical frameworks and practical programming skills necessary
+                            to build robust web systems.
+                        </p>
+
+                        <div class="education-tags">
+                            <span>Software Engineering</span>
+                            <span>Technical Learning</span>
+                        </div>
                     </div>
+                </article>
 
-                    <h3>Media Crest College</h3>
+                <article class="education-item">
+                    <div class="education-marker" aria-hidden="true"></div>
 
-                    <p class="education-description">
-                        Pursuing a software engineering learning path,
-                        with a focus on developing technical knowledge
-                        and applying engineering principles to practical
-                        software development challenges.
-                    </p>
+                    <div class="education-card">
+                        <div class="education-card-top">
+                            <span class="education-category">ONLINE LEARNING</span>
+                        </div>
 
-                    <div class="education-tags">
-                        <span>Software Engineering</span>
-                        <span>Technical Learning</span>
+                        <h3>Alison</h3>
+
+                        <p class="education-description">
+                            Online web development studies helped me build
+                            foundational knowledge of website development,
+                            programming logic, and practical digital skills.
+                        </p>
+
+                        <div class="education-tags">
+                            <span>Web Development</span>
+                            <span>Self-Directed Learning</span>
+                        </div>
                     </div>
-                </div>
-            </article>
-
-            <article class="education-item">
-                <div class="education-marker" aria-hidden="true"></div>
-
-                <div class="education-card">
-                    <div class="education-card-top">
-                        <span class="education-category">ONLINE LEARNING</span>
-                        <span class="education-date">Date to confirm</span>
-                    </div>
-
-                    <h3>Alison</h3>
-
-                    <p class="education-description">
-                        Completed or undertook online web development
-                        learning to build foundational knowledge of
-                        website development, programming logic, and
-                        practical digital skills.
-                    </p>
-
-                    <div class="education-tags">
-                        <span>Web Development</span>
-                        <span>Self-Directed Learning</span>
-                    </div>
-                </div>
-            </article>
+                </article>
 
             </div>
 
@@ -483,19 +477,31 @@
         <section id="projects" class="projects-section">
             <div class="projects-container">
 
-            <div class="projects-heading">
-                <span class="section-eyebrow">MY WORK</span>
-                <h2>Featured <span>Projects</span></h2>
-                <p>
-                    A selection of projects that demonstrate my technical
-                    skills, creativity, and approach to solving problems
-                    through software engineering.
-                </p>
-            </div>
+                <div class="projects-heading">
+                    <span class="section-eyebrow">MY WORK</span>
+                    <h2>Featured <span>Projects</span></h2>
+                    <p>
+                        A selection of projects that demonstrate my technical
+                        skills, creativity, and approach to solving problems
+                        through software engineering.
+                    </p>
+                </div>
+
+                <div class="project-filters" role="group" aria-label="Filter projects by category">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+                        All Projects
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+                        Web Development
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="software" aria-pressed="false">
+                        Software Development
+                    </button>
+                </div>
 
             <div class="projects-grid">
 
-            <article class="project-card">
+            <article class="project-card" data-category="web">
                 <div class="project-visual project-visual-web">
                     <span class="project-visual-icon" aria-hidden="true">&lt;/&gt;</span>
                     <span class="project-visual-label">WEB DEVELOPMENT</span>
@@ -526,7 +532,7 @@
                 </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-category="software">
                 <div class="project-visual project-visual-data">
                     <span class="project-visual-icon" aria-hidden="true">DB</span>
                     <span class="project-visual-label">DATA &amp; LOGIC</span>
@@ -557,7 +563,7 @@
                 </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-category="software">
                 <div class="project-visual project-visual-systems">
                     <span class="project-visual-icon" aria-hidden="true">{ }</span>
                     <span class="project-visual-label">DIGITAL SOLUTIONS</span>
@@ -691,6 +697,84 @@
             <p>If you would like to contact me, feel free to reach out. Whether you want to discuss a
                 project, collaborate, or just connect, I'd love to hear from you.
             </p>
+                    <div class="contact-form-container">
+    <h3>Send Me a Message</h3>
+
+    <p>
+        Have a project in mind or want to collaborate?
+        Fill in the form below to get in touch.
+    </p>
+
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="contact-name">Full Name</label>
+            <input
+                type="text"
+                id="contact-name"
+                name="name"
+                aria-describedby="name-error"
+                placeholder="Enter your full name"
+                required
+                minlength="2"
+                autocomplete="name"
+            >
+            <small class="field-error" id="name-error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input
+                type="email"
+                id="contact-email"
+                name="email"
+                aria-describedby="email-error"
+                placeholder="Enter your email address"
+                required
+                autocomplete="email"
+            >
+            <small class="field-error" id="email-error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                aria-describedby="subject-error"
+                placeholder="What would you like to discuss?"
+                required
+                minlength="3"
+            >
+            <small class="field-error" id="subject-error"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <textarea
+                id="contact-message"
+                name="message"
+                aria-describedby="message-error"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+                minlength="10"
+            ></textarea>
+            <small class="field-error" id="message-error"></small>
+        </div>
+
+        <button type="submit" id="contact-submit">
+            Submit Message
+        </button>
+
+        <p
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+        ></p>
+    </form>
+</div>
             <ul>
                 <li>Email
                     <a href="mailto:kimjerry915@gmail.com">
@@ -725,10 +809,19 @@
             </ul>
         </section>
         <footer>
-            @ 2026 Jeremy Ouko All rights reserved
-        </footer>
+    &copy; <span id="copyright-year"></span> Jeremy Ouko. All rights reserved.
+</footer>
     </main>
     <script src="script.js"></script>
+    <!-- Feature 6: Back-to-Top Button -->
+<button
+    id="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+>
+    ↑
+</button>
 
 </body>
 </html>
